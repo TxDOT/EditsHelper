@@ -1,43 +1,45 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ArcGIS defaultAssembly="EditsHelper.dll"
-        defaultNamespace="EditsHelper"
-        xmlns="http://schemas.esri.com/DADF/Registry"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
-
+﻿<ArcGIS defaultAssembly="EditsHelper.dll" defaultNamespace="EditsHelper" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
   <AddInInfo id="{8c2d37b6-57d0-474a-8b7e-cc6de3566eaa}" version="1.0" desktopVersion="2.6.24783">
-    <Name>EditsHelper</Name>   
-    <Description>EditsHelper description</Description>
+    <Name>EditsHelper</Name>
+    <Description>When you feel so mad that you want to ROAR, take a deep breath and count to four.</Description>
     <Image>Images\AddinDesktop32.png</Image>
-    <Author>MWASHBUR</Author>
-    <Company>Acme</Company>
+    <Author>Matt Washburn</Author>
+    <Company>TxDOT TPP-DM</Company>
     <Date>9/18/2020 8:54:41 PM, 2020</Date>
     <Subject>Framework</Subject>
     <!-- Note subject can be one or more of these topics:
                     Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
   </AddInInfo>
-
   <modules>
     <insertModule id="EditsHelper_Module" className="Module1" autoLoad="false" caption="Module1">
       <!-- uncomment to have the control hosted on a separate tab-->
-      <tabs>
-        <!--<tab id="EditsHelper_Tab1" caption="New Tab">
-          <group refID="EditsHelper_Group1"/>
-        </tab>-->
-      </tabs>
-              
+      <!--<tabs>
+        <tab id="EditsHelper_Tab1" caption="Edits Helper">
+          <group refID="EditsHelper_Group1" />
+        </tab>
+      </tabs>-->
       <groups>
         <!-- comment this out if you have no controls on the Addin tab to avoid
               an empty group-->
-        <group id="EditsHelper_Group1" caption="Group 1" appearsOnAddInTab="true">
-          <!-- host controls within groups -->
+        <!--<group id="EditsHelper_Group1" caption="Group 1" appearsOnAddInTab="true">
+          -->
+        <!-- host controls within groups -->
+        <!--
+        </group>-->
+        <group id="EditsHelper_Group1" caption="Edits Helper" appearsOnAddInTab="true">
+          <button refID="EditsHelper_SaveEditsAsyncButton" size="large" />
+          <button refID="EditsHelper_StashEditsButton" size="large" />
         </group>
       </groups>
-      
       <controls>
         <!-- add your controls here -->
-      </controls> 
-      
+        <button id="EditsHelper_SaveEditsAsyncButton" caption="Save Edits Async" className="SaveEditsAsyncButton" loadOnClick="true" smallImage="Images\cage.png" largeImage="Images\cage.png">
+          <tooltip heading="Save Edits Async">Click Nic to Save Async<disabledText /></tooltip>
+        </button>
+        <button id="EditsHelper_StashEditsButton" caption="Stash Edits" className="StashEditsButton" loadOnClick="true" smallImage="Images\treasure.png" largeImage="Images\treasure.png">
+          <tooltip heading="Stash Edits">All is not lost...<disabledText /></tooltip>
+        </button>
+      </controls>
     </insertModule>
   </modules>
 </ArcGIS>

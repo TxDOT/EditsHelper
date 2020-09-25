@@ -108,7 +108,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <AddInContent Include="Config.daml" />
+    <AddInContent Include="Config.daml">
+      <SubType>Designer</SubType>
+    </AddInContent>
     <AddInContent Include="Images\AddInDesktop16.png" />
     <AddInContent Include="Images\AddInDesktop32.png" />
     <AddInContent Include="DarkImages\AddInDesktop16.png" />
@@ -117,6 +119,44 @@
   <ItemGroup>
     <Compile Include="Module1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveEditsAsyncButton.cs" />
+    <Compile Include="StashEditsButton.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AddInContent Include="Images\GenericButtonBlue16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AddInContent Include="Images\GenericButtonBlue32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AddInContent Include="DarkImages\GenericButtonBlue16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AddInContent Include="DarkImages\GenericButtonBlue32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AddInContent Include="DarkImages\cage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AddInContent Include="Images\cage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AddInContent Include="DarkImages\treasure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AddInContent Include="Images\treasure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="DarkImages\cage_toast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cage_toast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AddInContent Include="DarkImages\yoda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AddInContent Include="Images\yoda.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!--

@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("EditsHelper")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Acme")]
+[assembly: AssemblyCompany("TxDOT TPP-DM")]
 [assembly: AssemblyProduct("EditsHelper")]
-[assembly: AssemblyCopyright("Copyright © Acme 2020")]
+[assembly: AssemblyCopyright("Copyright © Matt Washburn 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
